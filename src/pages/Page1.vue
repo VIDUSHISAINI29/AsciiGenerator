@@ -11,7 +11,7 @@ function checkEvent(event) {
    button.style.top = randomY.value + 'px';
    button.style.left = randomX.value + 'px';
    const key = event.key
-   console.log('keyCode  =', event);
+   console.log('event information  =', event.srcElement.clientHeight);
    asciiValue.value = key.charCodeAt(0)
 }
 document.addEventListener('keydown', (event) => {
